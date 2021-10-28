@@ -41,4 +41,5 @@ class M_pendaftaran extends CI_Model{
 		 $data_pendaftar = $this->db->get('ID')->result();
 		 return $data_pendaftar;
 	}
+	
 }

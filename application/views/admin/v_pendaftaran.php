@@ -206,19 +206,20 @@
               <table id="example1" class="table table-striped" style="font-size:12px;">
                 <thead>
                 <tr>
+                  <th> No </th>
                     <th>Nama</th>
                     <th>jenis kelamin</th>
                     <th>tanggal lahir</th>
                     <th>Agama </th>
                     <th>alamat</th>
                     <th>Nomer Telepone</th>
-                    <th>Nama Orang tua</th>
-                    <th> telepone orang tua </th>
+                    <!-- <th>Nama Orang tua</th>
+                    <th> telepone orang tua </th> -->
                     <th> Jurusan yang diambil </th>
-                    <th> Nama Sekolah</th>
-                    <th> Alamat Sekolah</th>
-                    <th> Rekomendasi</th>
-                    <th> Bukti pendaftaran </th>
+                    <!-- <th> Nama Sekolah</th> -->
+                    <!-- <th> Alamat Sekolah</th> -->
+                    <!-- <th> Rekomendasi</th> -->
+                    <!-- <th> Bukti pendaftaran </th> -->
                     <th style="text-align:right;">Aksi</th>
                 </tr>
                 </thead>
@@ -234,31 +235,28 @@
                        $agama=$i['agama'];
                        $alamat=$i['alamat'];
                        $nomer_telepone=$i['nomer_telepone'];
-                       $nama_orang_tua=$i['nama_orang_tua'];
-                       $telepone_orang_tua=$i['telepone_orang_tua'];
+                      //  $nama_orang_tua=$i['nama_orang_tua'];
+                      //  $telepone_orang_tua=$i['telepone_orang_tua'];
                        $jurusan_yangdiambil=$i['jurusan_yangdiambil'];
-                       $nama_sekolah=$i['nama_sekolah'];
-                       $alamat_sekolah=$i['alamat_sekolah'];
-                       $rekomendasi=$i['rekomendasi'];
-                       $bukti_pendaftaran=$i['bukti_pendaftaran'];
+                      //  $nama_sekolah=$i['nama_sekolah'];
+                      //  $alamat_sekolah=$i['alamat_sekolah'];
+                      //  $rekomendasi=$i['rekomendasi'];
+                      //  $bukti_pendaftaran=$i['bukti_pendaftaran'];
                     ?>
                 <tr>
-                  <td><?php echo $nama_lengkap;?></td>
+                <td><?php echo $no;?></td>
+                  <td> <a class="text" data-toggle="modal" data-target="#modalDetail<?php echo $id;?>"> <?= $nama_lengkap ?> </a> </td>
                   <td><?php echo $jenis_kelamin;?></td>
                   <td><?php echo $tanggal_lahir;?></td>
                   <td><?php echo $agama;?></td>
-                  <td><?php echo $alamat;?></td>
+                  <td><?php echo substr ($alamat,0,40) ;?></td>
                   <td><?php echo $nomer_telepone;?></td>
-                  <td><?php echo $nama_orang_tua;?></td>
-                  <td><?php echo $telepone_orang_tua;?></td>
+                  
                   <td><?php echo $jurusan_yangdiambil;?></td>
-                  <td><?php echo $nama_sekolah;?></td>
-                  <td><?php echo $alamat_sekolah;?></td>
-                  <td><?php echo $rekomendasi;?></td>
-                  <td><?php echo $bukti_pendaftaran;?></td>
+                  
                   <td style="text-align:right;">
                         <a class="btn" data-toggle="modal" data-target="#ModalHapus<?php echo $id;?>"><span class="fa fa-trash"></span></a>
-                        <a class="btn" data-toggle="modal" data-target="#ModalEdit<?php echo $id;?>"><span class="fa fa-edit"></span></a>
+                        <a class="btn" data-toggle="modal" data-target="#detailpengguna<?php echo $id;?>"><span class="fa fa-edit"></span></a>
                   </td>
                 </tr>
 				<?php endforeach;?>
@@ -271,7 +269,7 @@
                 </td>
                   <p1> Eksport Semua Data </p1>
               <td style="text-align:left;">
-                        <a class="btn" data-toggle="modal" data-target="#ModalHapusSemuaFile<?php  $id;?>"><span class="fa fa-file-excel-o"></span></a>
+                        <a class="btn" data-toggle="modal" data-target="#ModalExportFile<?php  $id;?>"><span class="fa fa-file-excel-o"></span></a>
                   </td>
             </div>
             
@@ -635,6 +633,111 @@
                 </div>
             </div>
         </div>
+      <!-- modal Export Semua Data Ke Excel -->
+      <div class="modal fade" id="ModalExportFile<?php  $id;?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
+                        <h4 class="modal-title" id="myModalLabel">Export Semua Data Ke Excel</h4>
+                    </div>
+                    <form class="form-horizontal" action="<?php echo base_url().'admin/pendaftaran/excel'?>" method="post" enctype="multipart/form-data">
+                    <div class="modal-body">
+							       <input type="hidden" name="kode" value="<?php  $id;?>"/>
+                            <p>Data akan Di export dalam bentuk Excel</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default btn-flat" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary btn-flat" id="simpan">Download</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detail Detail -->
+        <div class="modal fade" id="modalDetail<?php echo $id;?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
+                        <h4 class="modal-title" id="myModalLabel">Detail Pendaftar</h4>
+                    </div>
+                    <form class="form-horizontal" enctype="multipart/form-data">
+                    <div class="modal-body">
+							       <input type="hidden" name="kode" value="<?php echo $id;?>"/>
+  
+                     <div class = "row">
+                        <div class = "col-md-6">
+                           <label for="nama_lengkap">Nama Lengkap  </label>
+                           <input type="text" class = "form-control required" name="nama" value="<?php echo $nama_lengkap;?>" disabled/>
+                        </div>
+                        <div class = "col-md-6">
+                           <label for="nama_orang_tua">Nama Orang Tua</label>
+                           <input type="text" class = "form-control required" name="nama_orang_tua" value="<?php echo $nama_orang_tua;?>" disabled/>
+                        </div>
+                     </div>
+                     <div class = "row">
+                        <div class = "col-md-6">
+                           <label for="jenis_kelamin">Jenis Kelamin </label>
+                           <input type="text" class = "form-control required" name="jenis_kelamin" value="<?php echo $jenis_kelamin;?>" disabled/>
+                        </div>
+                        <div class = "col-md-6">
+                           <label for="jurusan_yangdiambil">Jurusan Yang Diambil</label>
+                           <input type="text" class = "form-control required" name="jurusan_yangdiambil" value="<?php echo $jurusan_yangdiambil;?>" disabled/>
+                        </div>
+                     </div>
+                     <div class = "row">
+                        <div class = "col-md-6">
+                           <label for="tanggal_lahir">Tanggal Lahir </label>
+                           <input type="text" class = "form-control required" name="tanggal_lahir" value="<?php echo $tanggal_lahir;?>" disabled/>
+                        </div>
+                        <div class = "col-md-6">
+                           <label for="nama_sekolah">Asal Sekolah</label>
+                           <input type="text" class = "form-control required" name="nama_sekolah" value="<?php echo $nama_sekolah;?>" disabled/>
+                        </div>
+                     </div>
+                     <div class = "row">
+                        <div class = "col-md-6">
+                           <label for="agama">Agama </label>
+                           <input type="text" class = "form-control required" name="agama" value="<?php echo $agama;?>" disabled/>
+                        </div>
+                        <div class = "col-md-6">
+                           <label for="nama_sekolah">Alamat Sekolah</label>
+                           <input type="text" class = "form-control required" name="nama_sekolah" value="<?php echo $nama_sekolah;?>" disabled/>
+                        </div>
+                     </div>
+                     <div class = "row">
+                        <div class = "col-md-6">
+                           <label for="alamat">Alamat Siswa </label>
+                           
+                           <input type="text" class = "form-control required" name="alamat" value="<?php echo $alamat;?>" disabled/>
+                        </div>
+                        <div class = "col-md-6">
+                           <label for="rekomendasi">Rekomendasi</label>
+                           <input type="text" class = "form-control required" name="rekomendasi" value="<?php echo $rekomendasi;?>" disabled/>
+                        </div>
+                     </div>
+                     <div class = "row">
+                        <div class = "col-md-6">
+                           <label for="nomer_telepone">Nomer Telepon Siswa </label>
+                           <input type="text" class = "form-control required" name="nomer_telepone" value="<?php echo $nomer_telepone;?>" disabled/>
+                        </div>
+                        <div class = "col-md-6">
+                           <label for="bukti_pendaftaran">Bukti Pendaftaran</label>
+                           <input type="text" class = "form-control required" name="bukti_pendaftaran" value="<?php echo $bukti_pendaftaran;?>" disabled/>
+                        </div>
+                     </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default btn-flat" data-dismiss="modal">Close</button>
+                        <!-- <button type="submit" class="btn btn-primary btn-flat" id="simpan">Edit</button> -->
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
 	<?php endforeach;?>
 
 
@@ -724,6 +827,18 @@
                 $.toast({
                     heading: 'Info',
                     text: "Semua Data pendaftar berhasil di hapus",
+                    showHideTransition: 'slide',
+                    icon: 'info',
+                    hideAfter: false,
+                    position: 'bottom-right',
+                    bgColor: '#7EC857'
+                });
+        </script>
+     <?php elseif($this->session->flashdata('msg')=='succes-semua-diprint'):?>
+        <script type="text/javascript">
+                $.toast({
+                    heading: 'Info',
+                    text: "Semua Data sukses di download",
                     showHideTransition: 'slide',
                     icon: 'info',
                     hideAfter: false,
