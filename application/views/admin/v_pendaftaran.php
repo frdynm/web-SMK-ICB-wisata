@@ -749,67 +749,67 @@
                     
                     <form class="form-horizontal" action="<?php echo base_url().'admin/pendaftaran/edit_pendaftaran'?>" method="post" enctype="multipart/form-data">
                     <div class="modal-body">
-							       <input type="show" name="id" value="<?php echo $id;?>"/>
+							       <input type="hidden" name="id" value="<?php echo $id;?>"/>
                      <div class = "row">
                         <div class = "col-md-6">
                            <label for="nama_lengkap">Nama Lengkap  </label>
-                           <input type="text" class = "form-control required" name="nama_lengkap" value="<?php echo $nama_lengkap;?>" />
+                           <input type="text" class = "form-control required" name="xnama_lengkap" value="<?php echo $nama_lengkap;?>" />
                         </div>
                         <div class = "col-md-6">
                            <label for="nama_orang_tua">Nama Orang Tua</label>
-                           <input type="text" class = "form-control required" name="nama_orang_tua" value="<?php echo $nama_orang_tua;?>" />
+                           <input type="text" class = "form-control required" name="xnama_orang_tua" value="<?php echo $nama_orang_tua;?>" />
                         </div>
                      </div>
                      <div class = "row">
                         <div class = "col-md-6">
                            <label for="jenis_kelamin">Jenis Kelamin </label>
-                           <input type="text" class = "form-control required" name="jenis_kelamin" value="<?php echo $jenis_kelamin;?>" />
+                           <input type="text" class = "form-control required" name="xjenis_kelamin" value="<?php echo $jenis_kelamin;?>" />
                         </div>
                         <div class = "col-md-6">
                            <label for="jurusan_yangdiambil">Jurusan Yang Diambil</label>
-                           <input type="text" class = "form-control required" name="jurusan_yangdiambil" value="<?php echo $jurusan_yangdiambil;?>" />
+                           <input type="text" class = "form-control required" name="xjurusan_yangdiambil" value="<?php echo $jurusan_yangdiambil;?>" />
                         </div>
                      </div>
                      <div class = "row">
                         <div class = "col-md-6">
                            <label for="tanggal_lahir">Tanggal Lahir </label>
-                           <input type="text" class = "form-control required" name="tanggal_lahir" value="<?php echo $tanggal_lahir;?>" />
+                           <input type="text" class = "form-control required" name="xtanggal_lahir" value="<?php echo $tanggal_lahir;?>" />
                         </div>
                         <div class = "col-md-6">
                            <label for="nama_sekolah">Asal Sekolah</label>
-                           <input type="text" class = "form-control required" name="nama_sekolah" value="<?php echo $nama_sekolah;?>" />
+                           <input type="text" class = "form-control required" name="xnama_sekolah" value="<?php echo $nama_sekolah;?>" />
                         </div>
                      </div>
                      <div class = "row">
                         <div class = "col-md-6">
                            <label for="agama">Agama </label>
-                           <input type="text" class = "form-control required" name="agama" value="<?php echo $agama;?>" />
+                           <input type="text" class = "form-control required" name="xagama" value="<?php echo $agama;?>" />
                         </div>
                         <div class = "col-md-6">
                            <label for="rekomendasi">Rekomendasi</label>
-                           <input type="text" class = "form-control required" name="rekomendasi" value="<?php echo $rekomendasi;?>" />
+                           <input type="text" class = "form-control required" name="xrekomendasi" value="<?php echo $rekomendasi;?>" />
                         </div>
                      </div>
                      <div class = "row">
                         <div class = "col-md-6">
                            <label for="alamat">Alamat Siswa </label>
-                           <textarea  class="form-control required" id = "alamat" name="alamat" required rows="5"  > <?php echo $i['alamat'] ?></textarea>
+                           <textarea  class="form-control required" name="xalamat" required rows="5"  > <?php echo $i['alamat'] ?></textarea>
                            <!-- <input type="text" class = "form-control required" name="alamat" value="<?php echo $alamat;?>" disabled/> -->
                         </div>
                         <div class = "col-md-6">
                            <label for="alamat_sekolah">Alamat Sekolah</label>
-                           <textarea  class="form-control required" id = "alamat_sekolah" name="alamat_sekolah" required rows="5"  > <?php echo $i['alamat_sekolah'] ?></textarea>
+                           <textarea  class="form-control required" name="xalamat_sekolah" required rows="5"  > <?php echo $i['alamat_sekolah'] ?></textarea>
                         </div>
                      </div>
                      <div class = "row">
                         <div class = "col-md-6">
                            <label for="nomer_telepone">Nomer Telepon Siswa </label>
-                           <input type="text" class = "form-control required" name="nomer_telepone" value="<?php echo $nomer_telepone;?>" />
+                           <input type="text" class = "form-control required" name="xnomer_telepone" value="<?php echo $nomer_telepone;?>" />
                         </div>
-                        <!-- <div class = "col-md-6">
-                           <label for="bukti_pendaftaran">Bukti Pendaftaran</label>
-                           <input type="file" class="form-control"  name="bukti_pendaftaran" >
-                        </div> -->
+                        <div class = "col-md-6">
+                           <label for="bukti_pendaftaran">Telepone Orang Tua</label>
+                           <input type="text" class = "form-control required" name="xtelepone_orang_tua" value="<?php echo $telepone_orang_tua;?>" />
+                        </div>
                      </div>
                     </div>
                     <div class="modal-footer">
