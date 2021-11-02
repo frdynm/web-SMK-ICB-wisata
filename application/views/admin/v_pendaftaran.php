@@ -10,7 +10,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>M-Sekolah | Inbox</title>
+  <title>M-Sekolah | Pendaftaran</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'assets/images/favicon.png'?>">
@@ -143,9 +143,9 @@
         <li class="treeview">
           <a href="<?php echo base_url().'admin/inbox'?>">
             <i class="fa fa-envelope"></i> <span>Inbox</span>
-            <span class="pull-right-container">
+            <!-- <span class="pull-right-container">
               <small class="label pull-right bg-green"><?php echo $jum_pesan;?></small>
-            </span>
+            </span> -->
           </a>
         </li>
 
@@ -725,6 +725,12 @@
                            <input type="text" class = "form-control required" name="nomer_telepone" value="<?php echo $nomer_telepone;?>" disabled/>
                         </div>
                         <div class = "col-md-6">
+                           <label for="telepone_orang_tua">Nomer Telephone Orang tua</label>
+                           <input type="text" class = "form-control required" name="telepone_orang_tua" value="<?php echo $telepone_orang_tua;?>" disabled/>
+                        </div>
+                     </div>
+                     <div class = "row">
+                     <div class = "col-md-6">
                            <label for="bukti_pendaftaran">Bukti Pendaftaran</label>
                            <img width="250" height="250" src="<?php echo base_url().'assets/bukti/'.$bukti_pendaftaran;?>">
                         </div>

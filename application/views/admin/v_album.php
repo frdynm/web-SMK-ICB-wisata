@@ -146,6 +146,12 @@
             </span>
           </a>
         </li>
+        <li class = "treeview">
+          <a href="<?php echo base_url().'admin/pendaftaran'?>">
+            <i class="fa fa-envelope"></i> <span>Pendaftaran</span>
+            
+          </a>
+        </li>
 
         <li>
           <a href="<?php echo base_url().'admin/komentar'?>">
