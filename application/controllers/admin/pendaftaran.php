@@ -186,5 +186,27 @@ class pendaftaran extends CI_Controller{
 			 redirect('admin/pendaftaran');
 
 		}
+
 	
+		public function edit_pendaftaran(){
+             
+	      $id=$this->input->post('ID');
+          $nama_lengkap=strip_tags($this->input->post('nama_lengkap'));
+          $jenis_kelamin=strip_tags($this->input->post('jenis_kelamin'));
+          $tanggal_lahir=strip_tags($this->input->post('tanggal_lahir'));
+          $agama=strip_tags($this->input->post('agama'));
+          $alamat=strip_tags($this->input->post('alamat'));
+          $nomer_telepone=strip_tags($this->input->post('nomer_telepone'));
+          $nama_orang_tua=strip_tags($this->input->post('nama_orang_tua'));
+          $telepone_orang_tua=strip_tags($this->input->post('telepone_orang_tua'));
+          $jurusan_yangdiambil=strip_tags($this->input->post('jurusan_yangdiambil'));
+          $nama_sekolah=strip_tags($this->input->post('nama_sekolah'));
+          $alamat_sekolah=strip_tags($this->input->post('alamat_sekolah'));
+          $rekomendasi=strip_tags($this->input->post('rekomendasi'));
+          $this->m_pendaftaran->update_profile($id,$nama_lengkap,$jenis_kelamin,$tanggal_lahir,$agama,$alamat,$nomer_telepone,$nama_orang_tua,$telepone_orang_tua,$jurusan_yangdiambil,$nama_sekolah,$alamat_sekolah,$rekomendasi);
+          echo $this->session->set_flashdata('msg','succes-semua-diprint');
+          redirect('admin/pendaftaran');
+
+
+    }
 }

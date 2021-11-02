@@ -104,59 +104,95 @@
                         <div class="col-xs-12 col-sm-12  contact-option">
                             <div class="contact-title">
                                 <h3>Masukan Data Diri Anda</h3>
-                                <form action="<?php echo site_url('pendaftaran/kirim_pesan');?>" method="post">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name" name="nama_lengkap" required>
+                                <form action="<?php echo site_url('pendaftaran/kirim_pendaftaran');?>" method="post" enctype="multipart/form-data">
+                                    <div class="row">
+                                        <div class = "col-md-6">
+                                        <label for="nama_lengkap">Nama Lengkap  </label>
+                                        <input type="text" class="form-control" placeholder="Contoh: Ferdy Nur Muhammad" name="nama_lengkap" required>
+                                        </div>
+                                        <div class = "col-md-6">
+                                        <label for="nama_orang_tua">Nama Orang tua</label>
+                                        <input type="text" class="form-control" placeholder="Contoh : Sumiati" name="nama_orang_tua" required>
+                                        </div>
                                     </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Jenis_kelamin" name="jenis_kelamin" required>
+                                    <div class="row">
+                                        <div class = "col-md-6">
+                                        <label for="jenis_kelamin">Jenis Kelamin</label>
+                                        <select name="jenis_kelamin" id="jenis_kelamin" class="form-control" required>
+                                        <option value="Laki-Laki">Laki - Laki</option>
+                                        <option value="Perempuan">Perempuan</option>
+                                        </select>
+                                        </div>
+                                        <div class = "col-md-6">
+                                        <label for="telepone_orang_tua">Nomer Telepphone Orang tua</label>
+                                        <input type="text" class="form-control" placeholder="Contoh : 081281828181" name="telepone_orang_tua" required>
+                                        </div>
                                     </div>
-                                    <!-- // end .form-group -->
-                                    <div class="form-group">
-                                    <label for="start">Tanggal lahir</label> 
-                                        <input type="date" class="form-control" placeholder="Tanggal lahir" name="tanggal_lahir" required>
-                                    </div>
+                                    <div class="row">
+                                        <div class = "col-md-6">
+                                        <label for="tanggal_lahir">Tanggal Lahir</label>
+                                        <input type="date" class="form-control" name="tanggal_lahir" required>
+                                        </div>
+                                        
 
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Agama" name="agama" required>
+                                        <div class = "col-md-6">
+                                        <label for="jurusan_yangdiambil">Jurusan Yang Diambil</label>
+                                        <select name="jurusan_yangdiambil" id="jurusan_yangdiambil" class="form-control" required>
+                                        <option value="Usaha Perjalanan Wisata">Usaha Perjalanan Wisata</option>
+                                        <option value="Kuliner/Tata Boga">Kuliner/TataBoga</option>
+                                        <option value="Perhotelan">Perhotelan</option>
+                                        </select>
+                                        </div>
+                                        
                                     </div>
+                                    <div class="row">
+                                        <div class = "col-md-6">
+                                        <label for="agama">Agama</label>
+                                        <select name="agama" id="agama" class="form-control" required>
+                                        <option value="Islam">Islam</option>
+                                        <option value="Katolik">Katolik</option>
+                                        <option value="Protestan">Protestan</option>
+                                        <option value="Budha">Budha</option>
+                                        <option value="Konghuchu">Konghuchu</option>
+                                        </select>
+                                        </div>
+                                        <div class = "col-md-6">
+                                        <label for="nama_sekolah">Asal Sekolah</label>
+                                        <input type="text" class="form-control" placeholder="Masukan Asal Sekolah" name="nama_sekolah" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class = "col-md-6">
+                                        <label for="alamat">Alamat Lengkap </label>
+                                        <textarea placeholder="Jl.Pahlawan no 19 B kota Bandung Rt/Rw : 01/02 Kel, Sukamaju Kec,Cibeunying kulon" class="form-control" name="alamat" required rows="5"></textarea>
+                                        </div>
+                                        <div class = "col-md-6">
+                                        <label for="alamat_sekolah">Alamat Sekolah</label>
+                                        <textarea placeholder="Jl.Pahlawan no 19 B kota Bandung Rt/Rw : 01/02 Kel, Sukamaju Kec,Cibeunying kulon" class="form-control" name="alamat_sekolah" required rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class = "col-md-6">
+                                        <label for="nomer_telepone">Nomer Handphone Siswa</label>
+                                        <input type="text" class="form-control" placeholder="Contoh : 081281828181" name="nomer_telepone" required>
+                                        </div>
+                                        <div class = "col-md-6">
+                                        <label for="rekomendasi">Rekomendasi / MGM</label>
+                                        <input type="text" class="form-control" placeholder="Contoh : rekomendasi ibu yanti SMP Pasunda 5" name="rekomendasi" >
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class = "col-md-6">
+                                        <label for="bukti_pendaftaran">File Bukti Pendaftaran</label>
+                                        <input type="file" class="form-control"  name="bukti_pendaftaran" required>
+                                        </div>
                                     
-                                    <!-- // end .form-group -->
-                                    <div class="form-group">
-                                        <textarea placeholder="alamat" class="form-control" name="alamat" required rows="5"></textarea>
                                     </div>
-                                    <!-- // end .form-group -->
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Nomer Telephone" name="nomer_telepone" required>
-                                    </div>
-                                    <!-- // end .form-group -->
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="nama orang tua" name="nama_orang_tua" required>
-                                    </div>
-                                    <!-- // end .form-group -->
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Telepone orang tua" name="telepone_orang_tua" required>
-                                    </div>
-                                    <!-- // end .form-group -->
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Jurusan yang diambil" name="jurusan_yangdiambil" required>
-                                    </div>
-                                    <!-- // end .form-group -->
-                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Nama Asal SMP" name="nama_sekolah" required>
-                                    </div>
-                                    <!-- // end .form-group -->
-                                    <div class="form-group">
-                                        <textarea placeholder="alamat SMP" class="form-control" name="alamat_sekolah" required rows="5"></textarea>
-                                    </div>
+                                     
+                                   
                                     
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Rekomendasi / MGM (Jika ada)" name="rekomendasi" >
-                                    </div>
-                                    <!-- // end .form-group -->
-                                    <div class="form-group">
-                                        <input type="file" class="form-control" placeholder="bukti pendaftaran" name="bukti_pendaftaran" required>
-                                    </div>
+                                   
+                                   
                                     
                                     <!-- // end .form-group -->
                                     <button type="submit" class="btn btn-default btn-submit">SUBMIT</button>

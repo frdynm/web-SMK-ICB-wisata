@@ -256,7 +256,7 @@
                   
                   <td style="text-align:right;">
                         <a class="btn" data-toggle="modal" data-target="#ModalHapus<?php echo $id;?>"><span class="fa fa-trash"></span></a>
-                        <a class="btn" data-toggle="modal" data-target="#detailpengguna<?php echo $id;?>"><span class="fa fa-edit"></span></a>
+                        <a class="btn" data-toggle="modal" data-target="#modalEdit<?php echo $id;?>"><span class="fa fa-edit"></span></a>
                   </td>
                 </tr>
 				<?php endforeach;?>
@@ -666,7 +666,7 @@
                     </div>
                     <form class="form-horizontal" enctype="multipart/form-data">
                     <div class="modal-body">
-							       <input type="hidden" name="kode" value="<?php echo $id;?>"/>
+							       <input type="hidden" name="id" value="<?php echo $id;?>"/>
   
                      <div class = "row">
                         <div class = "col-md-6">
@@ -704,19 +704,19 @@
                            <input type="text" class = "form-control required" name="agama" value="<?php echo $agama;?>" disabled/>
                         </div>
                         <div class = "col-md-6">
-                           <label for="nama_sekolah">Alamat Sekolah</label>
-                           <input type="text" class = "form-control required" name="nama_sekolah" value="<?php echo $nama_sekolah;?>" disabled/>
+                           <label for="rekomendasi">Rekomendasi</label>
+                           <input type="text" class = "form-control required" name="rekomendasi" value="<?php echo $rekomendasi;?>" disabled/>
                         </div>
                      </div>
                      <div class = "row">
                         <div class = "col-md-6">
                            <label for="alamat">Alamat Siswa </label>
-                           
-                           <input type="text" class = "form-control required" name="alamat" value="<?php echo $alamat;?>" disabled/>
+                           <textarea  class="form-control required" id = "alamat" name="alamat" required rows="5"  disabled> <?php echo $i['alamat'] ?></textarea>
+                           <!-- <input type="text" class = "form-control required" name="alamat" value="<?php echo $alamat;?>" disabled/> -->
                         </div>
                         <div class = "col-md-6">
-                           <label for="rekomendasi">Rekomendasi</label>
-                           <input type="text" class = "form-control required" name="rekomendasi" value="<?php echo $rekomendasi;?>" disabled/>
+                           <label for="alamat_sekolah">Alamat Sekolah</label>
+                           <textarea  class="form-control required" id = "alamat_sekolah" name="alamat_sekolah" required rows="5"  disabled> <?php echo $i['alamat_sekolah'] ?></textarea>
                         </div>
                      </div>
                      <div class = "row">
@@ -726,13 +726,95 @@
                         </div>
                         <div class = "col-md-6">
                            <label for="bukti_pendaftaran">Bukti Pendaftaran</label>
-                           <input type="text" class = "form-control required" name="bukti_pendaftaran" value="<?php echo $bukti_pendaftaran;?>" disabled/>
+                           <img width="250" height="250" src="<?php echo base_url().'assets/bukti/'.$bukti_pendaftaran;?>">
                         </div>
                      </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default btn-flat" data-dismiss="modal">Close</button>
                         <!-- <button type="submit" class="btn btn-primary btn-flat" id="simpan">Edit</button> -->
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- edit pengguna -->
+        <div class="modal fade" id="modalEdit<?php echo $id;?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
+                        <h4 class="modal-title" id="myModalLabel">Detail Pendaftar</h4>
+                    </div>
+                    
+                    <form class="form-horizontal" action="<?php echo base_url().'admin/pendaftaran/edit_pendaftaran'?>" method="post" enctype="multipart/form-data">
+                    <div class="modal-body">
+							       <input type="show" name="id" value="<?php echo $id;?>"/>
+                     <div class = "row">
+                        <div class = "col-md-6">
+                           <label for="nama_lengkap">Nama Lengkap  </label>
+                           <input type="text" class = "form-control required" name="nama_lengkap" value="<?php echo $nama_lengkap;?>" />
+                        </div>
+                        <div class = "col-md-6">
+                           <label for="nama_orang_tua">Nama Orang Tua</label>
+                           <input type="text" class = "form-control required" name="nama_orang_tua" value="<?php echo $nama_orang_tua;?>" />
+                        </div>
+                     </div>
+                     <div class = "row">
+                        <div class = "col-md-6">
+                           <label for="jenis_kelamin">Jenis Kelamin </label>
+                           <input type="text" class = "form-control required" name="jenis_kelamin" value="<?php echo $jenis_kelamin;?>" />
+                        </div>
+                        <div class = "col-md-6">
+                           <label for="jurusan_yangdiambil">Jurusan Yang Diambil</label>
+                           <input type="text" class = "form-control required" name="jurusan_yangdiambil" value="<?php echo $jurusan_yangdiambil;?>" />
+                        </div>
+                     </div>
+                     <div class = "row">
+                        <div class = "col-md-6">
+                           <label for="tanggal_lahir">Tanggal Lahir </label>
+                           <input type="text" class = "form-control required" name="tanggal_lahir" value="<?php echo $tanggal_lahir;?>" />
+                        </div>
+                        <div class = "col-md-6">
+                           <label for="nama_sekolah">Asal Sekolah</label>
+                           <input type="text" class = "form-control required" name="nama_sekolah" value="<?php echo $nama_sekolah;?>" />
+                        </div>
+                     </div>
+                     <div class = "row">
+                        <div class = "col-md-6">
+                           <label for="agama">Agama </label>
+                           <input type="text" class = "form-control required" name="agama" value="<?php echo $agama;?>" />
+                        </div>
+                        <div class = "col-md-6">
+                           <label for="rekomendasi">Rekomendasi</label>
+                           <input type="text" class = "form-control required" name="rekomendasi" value="<?php echo $rekomendasi;?>" />
+                        </div>
+                     </div>
+                     <div class = "row">
+                        <div class = "col-md-6">
+                           <label for="alamat">Alamat Siswa </label>
+                           <textarea  class="form-control required" id = "alamat" name="alamat" required rows="5"  > <?php echo $i['alamat'] ?></textarea>
+                           <!-- <input type="text" class = "form-control required" name="alamat" value="<?php echo $alamat;?>" disabled/> -->
+                        </div>
+                        <div class = "col-md-6">
+                           <label for="alamat_sekolah">Alamat Sekolah</label>
+                           <textarea  class="form-control required" id = "alamat_sekolah" name="alamat_sekolah" required rows="5"  > <?php echo $i['alamat_sekolah'] ?></textarea>
+                        </div>
+                     </div>
+                     <div class = "row">
+                        <div class = "col-md-6">
+                           <label for="nomer_telepone">Nomer Telepon Siswa </label>
+                           <input type="text" class = "form-control required" name="nomer_telepone" value="<?php echo $nomer_telepone;?>" />
+                        </div>
+                        <!-- <div class = "col-md-6">
+                           <label for="bukti_pendaftaran">Bukti Pendaftaran</label>
+                           <input type="file" class="form-control"  name="bukti_pendaftaran" >
+                        </div> -->
+                     </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default btn-flat" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary btn-flat" id="simpan">Edit</button>
                     </div>
                     </form>
                 </div>
