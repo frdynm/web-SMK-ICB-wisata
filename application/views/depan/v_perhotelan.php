@@ -4,8 +4,18 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>About</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <meta name="title" content="Perhotelan"/>
+        <meta name="description" content="SMK ICB Cinta Wisata merupakan salah satu SMK Swasta di Bandung, merupakan sekolah yang memiliki program keahlian Usaha perjalanan Wisata, Jasa Boga dan Akomodasi Perhotelan. Sekolah SMK ICB Cinta Wisata terdapat 3 jurusan yaitu Usaha perjalanan Wisata, Jasa Boga dan Akomodasi Perhotelan."/>
+        <meta name="keywords" content="SMK ICB Cinta Wisata  Bandung, SMK di Bandung, SMK Swasta di Bandung, smk Pariwisata di bandung, smk Tataboga di bandung, smk Hits di bandung, sekolah Kuliner di bandung,Sekolah perhotelan dibandung,sekolah swasta hit bandung, bandung hebat,smk populer dibandung, smk murah dibandung, smk dekat kota , smk tersukses dibandung, smk bandung banget, smk usaha perjalanan wisata bandung, smk icb cinta wisata kota bandung, smk di jalan pahlawan"/>
+        <meta name="copyright" content="mysch.id"/>	
+        <meta name="author" content="mysch.id"/>	
+        <meta name="geo.placename" content="indonesia"/>
+        <meta name="geo.country" content="id"/>
+        <meta name="content-language" content="id"/>
+        <title> Perhotelan </title>
     <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?php echo base_url().'theme/css/bootstrap.min.css'?>">
@@ -97,16 +107,68 @@
     <div class="container">
         <div class="row">
             <div class="col-md-7">
-                <h2>Kata Sambutan</h2>
-                <p>SMK ICB Cinta Wisata  (dahulu SMIP ICB) didirikan oleh Yayasan Insan Cinta Bangsa Pada Tahun 1989. Pada awal berdirinya SMIP-ICB menerima 3 kelas dengan jumlah siswa 138 orang dengan jurusan Perhotelan. Tahun 1990 SMIP ICB membuka baru Jurusan Usaha Perjalanan Wisata. Pada Tahun 1998 SMIP-ICB setelah diakreditasi mendapat status”Disamakan” dengan 2 jurusan yaitu Perhotelan dan Perjalanan Wisata.  Berdasarkan Kurikulum SMK edisi 99, SMIP–ICB dibawah yayasan menetapkan namanya dari SMIP-ICB menjadi SMK– ICB Cinta Wisata  dan menambah jurusan (program Keahlian ) baru yaitu Tata Boga (Food & Beverage).
+                <h2>Program Keahlian : Akomodasi Perhotelan</h2>
+                <p>Kompetensi keahlian Perhotelan adalah kompetensi keahlian yang menekankan keahlian pada bidang penguasaan informasi dan kemampuan tentang akomodasi perhotelan, pengelolaan dan penyelengaraan akomodasi.
                 </p>
-                <p>Tahun 2006 seiring dengan perubahan kurikulum Tingkat Satuan Pembelajaran (KTSP) SMK – ICB Cinta Wisata memiliki 3 jurusan yaitu Akomodasi Perhotelan, Usaha Jasa Pariwisata dan Restoran (FB)  yang sebelumnya bernama Tata Boga. Berdasarkan Spektrum Keputusan Dirjen Mandikdasmen Nomor  251/C/Kep/MN/2008 Tentang Spektrum Keahlian Pendidikan Menengah Kejuruan SMK ICB Cinta Wisata  memiliki 2 Bidang Studi Keahlian yaitu : 1. Pariwisata dengan kompetensi Keahlian Usaha Perjalanan Wisata dan Akomodasi Perhotelan. 2. Bidang Studi Keahlian Tata Boga dengan kompetensi Keahlian Jasa Boga.
+                <p>Kompetensi keahlian Perhotelan menyiapkan peserta didik untuk bekerja pada bidang yang berhubungan dengan pariwisata. Adapun paparan teori maupun praktik yang diajarkan mengenai:
                 </p>
+                <p1>
+                1. Housekeeping<br>
+                2. Front Office <br>
+                3. Laundry  <br>
+                4. Restaurant Service<br>
+                </p1>
+                <p1>
+                Selain kelas reguler, kompetensi keahlian Perhotelan bekerja sama dan membuka Kelas Industri dengan Hotel InterContinental Bandung.
+                </p1>
                 </div>
-                <div class="col-md-5">
-                    <img src="<?php echo base_url().'theme/images/image6.jpeg'?>" class="img-fluid" alt="#">
+            <div class="col-md-5">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                
+                </ol>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img class="d-block mw-100" src="<?php echo base_url().'theme/images/perhotelan2.jpeg'?>" alt="First slide">
                 </div>
-            </div>
+                
+                <div class="carousel-item">
+                <img class="d-block mw-100" src="<?php echo base_url().'theme/images/perhotelan3.jpeg'?>" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                <img class="d-block mw-100" src="<?php echo base_url().'theme/images/perhotelan4.jpeg'?>" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                <img class="d-block mw-100" src="<?php echo base_url().'theme/images/perhotelan5.jpeg'?>" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                <img class="d-block mw-100" src="<?php echo base_url().'theme/images/perhotelan4.jpeg'?>" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                <img class="d-block mw-100" src="<?php echo base_url().'theme/images/perhotelan7.jpeg'?>" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                <img class="d-block mw-100" src="<?php echo base_url().'theme/images/perhotelan8.jpeg'?>" alt="Third slide">
+                </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                 </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+                </a>
+            </div>   
+        </div>
+        </div>
         </div>
     </section>
     <!--//END WELCOME TITLE -->
@@ -114,100 +176,94 @@
     <!--//END TESTIMONIAL -->
     <!--============================= DETAILED CHART =============================-->
     <div class="detailed_chart">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-3 chart_bottom">
-                    <div class="chart-img">
-                        <img src="<?php echo base_url().'theme/images/chart-icon_1.png'?>" class="img-fluid" alt="chart_icon">
-                    </div>
-                    <div class="chart-text">
-                        <p><span class="counter"><?php echo $tot_guru;?></span> Guru
-                        </p>
-                    </div>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-xs-12 col-sm-6 col-md-3 chart_bottom">
+                <div class="chart-img">
+                    <img src="<?php echo base_url().'theme/images/chart-icon_1.png'?>" class="img-fluid" alt="chart_icon">
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 chart_bottom chart_top">
-                    <div class="chart-img">
-                        <img src="<?php echo base_url().'theme/images/chart-icon_2.png'?>" class="img-fluid" alt="chart_icon">
-                    </div>
-                    <div class="chart-text">
-                        <p><span class="counter"><?php echo $tot_siswa;?></span> Siswa
-                        </p>
-                    </div>
+                <div class="chart-text">
+                    <p><span class="counter"><?php echo $tot_guru;?></span> Guru
+                    </p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 chart_top">
-                    <div class="chart-img">
-                        <img src="<?php echo base_url().'theme/images/chart-icon_3.png'?>" class="img-fluid" alt="chart_icon">
-                    </div>
-                    <div class="chart-text">
-                        <p><span class="counter"><?php echo $tot_files;?></span> Download
-                        </p>
-                    </div>
+            </div>
+            <!-- <div class="col-xs-12 col-sm-6 col-md-3 chart_bottom chart_top">
+                <div class="chart-img">
+                    <img src="<?php echo base_url().'theme/images/chart-icon_2.png'?>" class="img-fluid" alt="chart_icon">
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <div class="chart-img">
-                        <img src="<?php echo base_url().'theme/images/chart-icon_4.png'?>" class="img-fluid" alt="chart_icon">
-                    </div>
-                    <div class="chart-text">
-                        <p><span class="counter"><?php echo $tot_agenda;?></span> Agenda</p>
-                    </div>
+                <div class="chart-text">
+                    <p><span class="counter"><?php echo $tot_siswa;?></span> Siswa
+                    </p>
+                </div>
+            </div> -->
+            <div class="col-xs-12 col-sm-6 col-md-3 chart_top">
+                <div class="chart-img">
+                    <img src="<?php echo base_url().'theme/images/chart-icon_3.png'?>" class="img-fluid" alt="chart_icon">
+                </div>
+                <div class="chart-text">
+                    <p><span class="counter"><?php echo $tot_files;?></span> Download
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="chart-img">
+                    <img src="<?php echo base_url().'theme/images/chart-icon_4.png'?>" class="img-fluid" alt="chart_icon">
+                </div>
+                <div class="chart-text">
+                    <p><span class="counter"><?php echo $tot_agenda;?></span> Agenda</p>
                 </div>
             </div>
         </div>
     </div>
+</div>
     <!--//END DETAILED CHART -->
 
         <!--============================= FOOTER =============================-->
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="foot-logo">
-                            <a href="<?php echo site_url();?>">
-                                <img src="<?php echo base_url().'theme/images/logo-white.png'?>" class="img-fluid" alt="footer_logo">
-                            </a>
-                            <p><?php echo date('Y');?> © copyright by <a href="http://mfikri.com" target="_blank">M Fikri</a>. <br>All rights reserved.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="sitemap">
-                                <h3>Menu Utama</h3>
-                                <ul>
-                                    <li><a href="<?php echo site_url();?>">Home</a></li>
-                                    <li><a href="<?php echo site_url('about');?>">About</a></li>
-                                    <li><a href="<?php echo site_url('artikel');?>">Blog </a></li>
-                                    <li><a href="<?php echo site_url('galeri');?>">Gallery</a></li>
-                                    <li><a href="<?php echo site_url('contact');?>">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="sitemap">
-                              <h3>Akademik</h3>
-                              <ul>
-                                  <li><a href="<?php echo site_url('guru');?>">Guru</a></li>
-                                  <li><a href="<?php echo site_url('siswa');?>">Siswa </a></li>
-                                  <li><a href="<?php echo site_url('pengumuman');?>">Pengumuman</a></li>
-                                  <li><a href="<?php echo site_url('agenda');?>">Agenda</a></li>
-                                  <li><a href="<?php echo site_url('download');?>">Download</a></li>
-                              </ul>
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="address">
-                                <h3>Hubungi Kami</h3>
-                                <p><span>Alamat: </span> Padang, Sumatera Barat, INA. 11001</p>
-                                <p>Email : info@mschool.com
-                                    <br> Phone : +91 555 668 986</p>
-                                    <ul class="footer-social-icons">
-                                        <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin fa-in" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter fa-tw" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
+<footer>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="row justify-content-md-center">
+                </div>
+                <div class="col-md-3">
+                    <div class="sitemap">
+                        <h3>Menu Utama</h3>
+                        <ul>
+                            <li><a href="<?php echo site_url();?>">Home</a></li>
+                            <li><a href="<?php echo site_url('about');?>">About</a></li>
+                            <li><a href="<?php echo site_url('artikel');?>">Blog </a></li>
+                            <li><a href="<?php echo site_url('galeri');?>">Gallery</a></li>
+                            <li><a href="<?php echo site_url('contact');?>">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="sitemap">
+                      <h3>Akademik</h3>
+                      <ul>
+                          <li><a href="<?php echo site_url('guru');?>">Guru</a></li>
+                          <li><a href="<?php echo site_url('siswa');?>">Siswa </a></li>
+                          <li><a href="<?php echo site_url('pengumuman');?>">Pengumuman</a></li>
+                          <li><a href="<?php echo site_url('agenda');?>">Agenda</a></li>
+                          <li><a href="<?php echo site_url('download');?>">Download</a></li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="address">
+                        <h3>Hubungi Kami</h3>
+                        <p><span>Alamat: </span>  Jl. Pahlawan  No. 19 B Telp. (022) 7271613 Kelurahan Cihaurgeulis Kecamatan Cibenying kaler Kota Bandung 40122 </p>
+                        <p>Email : cintawisata@smkicb.sch.id
+                            <br> Phone : (022) 7271613</p>
+                            <!-- <ul class="footer-social-icons">
+                                <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin fa-in" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter fa-tw" aria-hidden="true"></i></a></li>
+                            </ul> -->
                         </div>
                     </div>
-                </footer>
+                </div>
+            </div>
+</footer>
                 <!--//END FOOTER -->
                 <!-- jQuery, Bootstrap JS. -->
                 <script src="<?php echo base_url().'theme/js/jquery.min.js'?>"></script>

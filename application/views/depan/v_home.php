@@ -4,8 +4,20 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>M School - Selamat Datang di M School</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <meta name="title" content="SMK ICB CINTA Wisata"/>
+        <meta name="description" content="SMK ICB Cinta Wisata merupakan salah satu SMK Swasta di Bandung, merupakan sekolah yang memiliki program keahlian Usaha perjalanan Wisata, Jasa Boga dan Akomodasi Perhotelan. Sekolah SMK ICB Cinta Wisata terdapat 3 jurusan yaitu Usaha perjalanan Wisata, Jasa Boga dan Akomodasi Perhotelan."/>
+        <meta name="keywords" content="SMK ICB Cinta Wisata  Bandung, SMK di Bandung, SMK Swasta di Bandung, smk Pariwisata di bandung, smk Tataboga di bandung, smk Hits di bandung, sekolah Kuliner di bandung,Sekolah perhotelan dibandung,sekolah swasta hit bandung, bandung hebat,smk populer dibandung, smk murah dibandung, smk dekat kota , smk tersukses dibandung, smk bandung banget, smk usaha perjalanan wisata bandung, smk icb cinta wisata kota bandung, smk di jalan pahlawan"/>
+        <meta name="copyright" content="mysch.id"/>	
+        <meta name="author" content="mysch.id"/>	
+        <meta name="geo.placename" content="indonesia"/>
+        <meta name="geo.country" content="id"/>
+        <meta name="content-language" content="id"/>
+    
+    
+        <title> SMK ICB CINTA WISATA </title>
     <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?php echo base_url().'theme/css/bootstrap.min.css'?>">
@@ -104,11 +116,11 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img class="d-block" src="<?php echo base_url().'theme/images/slider.jpg'?>" alt="First slide">
+                    <img class="d-block" src="<?php echo base_url().'theme/images/lapangan.jpg'?>" alt="First slide">
                     <div class="carousel-caption d-md-block">
                         <div class="slider_title">
-                            <h1>Bepikir Kreaftif &amp; Inovatif</h1>
-                            <h4>Bagi kami kreativitas merupakan gerbang masa depan.<br> kreativitas akan mendorong inovasi. <br> Itulah yang kami lakukan.</h4>
+                            <h1>Selamat Datang Di SMK ICB Cinta Wisata</h1>
+                            <h4>Sekolah yang <br> menjunjung tinggi Inovasi,Cerdas dan berkarakter .</h4>
                             <div class="slider-btn">
                                 <a href="<?php echo site_url('artikel');?>" class="btn btn-default">Learn more</a>
                             </div>
@@ -116,7 +128,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block" src="<?php echo base_url().'theme/images/slider-2.jpg'?>" alt="Second slide">
+                    <img class="d-block" src="<?php echo base_url().'theme/images/guru1.jpeg'?>" alt="Second slide">
                     <div class="carousel-caption d-md-block">
                         <div class="slider_title">
                             <h1>Guru Bekualitas Tinggi</h1>
@@ -128,7 +140,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block" src="<?php echo base_url().'theme/images/slider-3.jpg'?>" alt="Third slide">
+                    <img class="d-block" src="<?php echo base_url().'theme/images/pembelajaran12.jpeg'?>" alt="Third slide">
                     <div class="carousel-caption d-md-block">
                         <div class="slider_title">
                             <h1>Proses Belajar Interatif</h1>
@@ -319,7 +331,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
+</footer>
         <!--//END FOOTER -->
         <!-- jQuery, Bootstrap JS. -->
         <script src="<?php echo base_url().'theme/js/jquery.min.js'?>"></script>

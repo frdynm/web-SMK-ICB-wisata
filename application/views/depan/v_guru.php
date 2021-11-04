@@ -4,8 +4,18 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Guru</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <meta name="title" content="Guru"/>
+        <meta name="description" content="SMK ICB Cinta Wisata merupakan salah satu SMK Swasta di Bandung, merupakan sekolah yang memiliki program keahlian Usaha perjalanan Wisata, Jasa Boga dan Akomodasi Perhotelan. Sekolah SMK ICB Cinta Wisata terdapat 3 jurusan yaitu Usaha perjalanan Wisata, Jasa Boga dan Akomodasi Perhotelan."/>
+        <meta name="keywords" content="SMK ICB Cinta Wisata  Bandung, SMK di Bandung, SMK Swasta di Bandung, smk Pariwisata di bandung, smk Tataboga di bandung, smk Hits di bandung, sekolah Kuliner di bandung,Sekolah perhotelan dibandung,sekolah swasta hit bandung, bandung hebat,smk populer dibandung, smk murah dibandung, smk dekat kota , smk tersukses dibandung, smk bandung banget, smk usaha perjalanan wisata bandung, smk icb cinta wisata kota bandung, smk di jalan pahlawan"/>
+        <meta name="copyright" content="mysch.id"/>	
+        <meta name="author" content="mysch.id"/>	
+        <meta name="geo.placename" content="indonesia"/>
+        <meta name="geo.country" content="id"/>
+        <meta name="content-language" content="id"/>
+        <title> Agenda</title>
     <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?php echo base_url().'theme/css/bootstrap.min.css'?>">
@@ -123,56 +133,50 @@
     <!--//End Style 2 -->
     <!--============================= FOOTER =============================-->
     <footer>
-        <div class="container">
-            <div class="row">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="row justify-content-md-center">
+                </div>
                 <div class="col-md-3">
-                    <div class="foot-logo">
-                        <a href="<?php echo site_url();?>">
-                            <img src="<?php echo base_url().'theme/images/logo-white.png'?>" class="img-fluid" alt="footer_logo">
-                        </a>
-                        <p><?php echo date('Y');?> © copyright by <a href="http://mfikri.com" target="_blank">M Fikri</a>. <br>All rights reserved.</p>
-                        </div>
+                    <div class="sitemap">
+                        <h3>Menu Utama</h3>
+                        <ul>
+                            <li><a href="<?php echo site_url();?>">Home</a></li>
+                            <li><a href="<?php echo site_url('about');?>">About</a></li>
+                            <li><a href="<?php echo site_url('artikel');?>">Blog </a></li>
+                            <li><a href="<?php echo site_url('galeri');?>">Gallery</a></li>
+                            <li><a href="<?php echo site_url('contact');?>">Contact</a></li>
+                        </ul>
                     </div>
-                    <div class="col-md-3">
-                        <div class="sitemap">
-                            <h3>Menu Utama</h3>
-                            <ul>
-                                <li><a href="<?php echo site_url();?>">Home</a></li>
-                                <li><a href="<?php echo site_url('about');?>">About</a></li>
-                                <li><a href="<?php echo site_url('artikel');?>">Blog </a></li>
-                                <li><a href="<?php echo site_url('galeri');?>">Gallery</a></li>
-                                <li><a href="<?php echo site_url('contact');?>">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="sitemap">
-                          <h3>Akademik</h3>
-                          <ul>
-                              <li><a href="<?php echo site_url('guru');?>">Guru</a></li>
-                              <li><a href="<?php echo site_url('siswa');?>">Siswa </a></li>
-                              <li><a href="<?php echo site_url('pengumuman');?>">Pengumuman</a></li>
-                              <li><a href="<?php echo site_url('agenda');?>">Agenda</a></li>
-                              <li><a href="<?php echo site_url('download');?>">Download</a></li>
-                          </ul>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="address">
-                            <h3>Hubungi Kami</h3>
-                            <p><span>Alamat: </span> Padang, Sumatera Barat, INA. 11001</p>
-                            <p>Email : info@mschool.com
-                                <br> Phone : +91 555 668 986</p>
-                                <ul class="footer-social-icons">
-                                    <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin fa-in" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter fa-tw" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="sitemap">
+                      <h3>Akademik</h3>
+                      <ul>
+                          <li><a href="<?php echo site_url('guru');?>">Guru</a></li>
+                          <li><a href="<?php echo site_url('siswa');?>">Siswa </a></li>
+                          <li><a href="<?php echo site_url('pengumuman');?>">Pengumuman</a></li>
+                          <li><a href="<?php echo site_url('agenda');?>">Agenda</a></li>
+                          <li><a href="<?php echo site_url('download');?>">Download</a></li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="address">
+                        <h3>Hubungi Kami</h3>
+                        <p><span>Alamat: </span>  Jl. Pahlawan  No. 19 B Telp. (022) 7271613 Kelurahan Cihaurgeulis Kecamatan Cibenying kaler Kota Bandung 40122 </p>
+                        <p>Email : cintawisata@smkicb.sch.id
+                            <br> Phone : (022) 7271613</p>
+                            <!-- <ul class="footer-social-icons">
+                                <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin fa-in" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter fa-tw" aria-hidden="true"></i></a></li>
+                            </ul> -->
                         </div>
                     </div>
                 </div>
-            </footer>
+            </div>
+</footer>
             <!--//END FOOTER -->
             <!-- jQuery, Bootstrap JS. -->
     <script src="<?php echo base_url().'theme/js/jquery.min.js'?>"></script>

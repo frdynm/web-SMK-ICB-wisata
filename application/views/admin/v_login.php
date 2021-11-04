@@ -25,7 +25,7 @@
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg"> <img width="320px;" src="<?php echo base_url().'assets/images/mylogo.png'?>"></p><hr/>
+    <p class="login-box-msg"> <img width="250px;" src="<?php echo base_url().'theme/images/icb.png'?>"></p><hr/>
 
     <form action="<?php echo site_url().'admin/login/auth'?>" method="post">
       <div class="form-group has-feedback">
@@ -55,7 +55,7 @@
 
     <!-- /.social-auth-links -->
     <hr/>
-    <p><center>Copyright <?php echo date('Y');?> by M Fikri Setiadi <br/> All Right Reserved</center></p>
+    <p><center>Copyright <?php echo date('Y');?> by Ferdy Nur Muhammad <br/> All Right Reserved</center></p>
   </div>
   <!-- /.login-box-body -->
 </div>

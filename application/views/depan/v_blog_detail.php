@@ -275,14 +275,8 @@
 <!--============================= FOOTER =============================-->
 <footer>
     <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="foot-logo">
-                    <a href="<?php echo site_url();?>">
-                        <img src="<?php echo base_url().'theme/images/logo-white.png'?>" class="img-fluid" alt="footer_logo">
-                    </a>
-                    <p><?php echo date('Y');?> © copyright by <a href="http://mfikri.com" target="_blank">M Fikri</a>. <br>All rights reserved.</p>
-                    </div>
+        <div class="row justify-content-md-center">
+            <div class="row justify-content-md-center">
                 </div>
                 <div class="col-md-3">
                     <div class="sitemap">
@@ -311,19 +305,19 @@
                 <div class="col-md-3">
                     <div class="address">
                         <h3>Hubungi Kami</h3>
-                        <p><span>Alamat: </span> Padang, Sumatera Barat, INA. 11001</p>
-                        <p>Email : info@mschool.com
-                            <br> Phone : +91 555 668 986</p>
-                            <ul class="footer-social-icons">
+                        <p><span>Alamat: </span>  Jl. Pahlawan  No. 19 B Telp. (022) 7271613 Kelurahan Cihaurgeulis Kecamatan Cibenying kaler Kota Bandung 40122 </p>
+                        <p>Email : cintawisata@smkicb.sch.id
+                            <br> Phone : (022) 7271613</p>
+                            <!-- <ul class="footer-social-icons">
                                 <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fa fa-linkedin fa-in" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter fa-tw" aria-hidden="true"></i></a></li>
-                            </ul>
+                            </ul> -->
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+</footer>
         <!--//END FOOTER -->
         <!-- jQuery, Bootstrap JS. -->
         <script src="<?php echo base_url().'theme/js/jquery.min.js'?>"></script>
