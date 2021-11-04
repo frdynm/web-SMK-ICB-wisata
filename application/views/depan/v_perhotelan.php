@@ -16,7 +16,7 @@
         <meta name="geo.country" content="id"/>
         <meta name="content-language" content="id"/>
         <title> Perhotelan </title>
-    <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
+    <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icb.png'?>">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?php echo base_url().'theme/css/bootstrap.min.css'?>">
     <!-- Google Fonts -->
