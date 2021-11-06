@@ -59,9 +59,9 @@
                                      Jurusan
                                     </a>
                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href='upw'>Usaha perjalanan Wisata</a>
-                                    <a class="dropdown-item" href='Perhotelan'>Akomodasi Perhotelan</a>
-                                    <a class="dropdown-item" href='tata_boga'>Tata Boga</a>
+                                    <a class="dropdown-item" href="<?php echo site_url('upw');?>">Usaha perjalanan Wisata</a>
+                                    <a class="dropdown-item" href="<?php echo site_url('perhotelan');?>">Akomodasi Perhotelan</a>
+                                    <a class="dropdown-item" href="<?php echo site_url('tata_boga');?>">Tata Boga</a>
                                 
                                 </div>
                                 </li>
